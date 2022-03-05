@@ -11,7 +11,7 @@ import SwiftUI
 struct ListDragAndDropApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FruitsListScreen()
         }
     }
 }
