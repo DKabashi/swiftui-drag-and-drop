@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-struct Fruit: Identifiable {
+struct Fruit: Identifiable, Equatable {
     var id = UUID()
     var title: String
-    var image: String
     var description: String
+    var image: String
     var gradientColors: [Color]
 }

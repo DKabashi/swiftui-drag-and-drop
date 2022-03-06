@@ -6,10 +6,26 @@
 //
 
 import SwiftUI
+import UniformTypeIdentifiers
 
 struct FruitsListScreen: View {
+    @StateObject var viewModel = FruitsListViewModel()
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            ScrollView {
+                LazyVStack {
+                    ForEach(viewModel.fruits) { fruit in
+                        FruitCellView(fruit: fruit)
+                            .onDrag({
+                                viewModel.draggedItem = fruit
+                                return NSItemProvider(item: nil, typeIdentifier: fruit.title)
+                            })
+                            .onDrop(of: [UTType.text], delegate:   DragAndDropService<Fruit>(currentItem: fruit, items: $viewModel.fruits, draggedItem: $viewModel.draggedItem)
+                            )
+                    }
+                }.padding(.vertical, 20)
+            }.navigationTitle("List drag and drop 🔥")
+        } 
     }
 }
 

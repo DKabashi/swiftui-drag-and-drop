@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		819DFA1527D53207001B7821 /* DragAndDropService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819DFA1427D53207001B7821 /* DragAndDropService.swift */; };
 		81F3BB0F27D3ED21004204BB /* ListDragAndDropApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F3BB0E27D3ED21004204BB /* ListDragAndDropApp.swift */; };
 		81F3BB1327D3ED22004204BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81F3BB1227D3ED22004204BB /* Assets.xcassets */; };
 		81F3BB1627D3ED22004204BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81F3BB1527D3ED22004204BB /* Preview Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		819DFA1427D53207001B7821 /* DragAndDropService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragAndDropService.swift; sourceTree = "<group>"; };
 		81F3BB0B27D3ED21004204BB /* ListDragAndDrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListDragAndDrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81F3BB0E27D3ED21004204BB /* ListDragAndDropApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDragAndDropApp.swift; sourceTree = "<group>"; };
 		81F3BB1227D3ED22004204BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				81F3BB2427D3F0B3004204BB /* FruitCellView.swift */,
 				81F3BB2027D3F013004204BB /* FruitsListViewModel.swift */,
 				81F3BB1E27D3EF2B004204BB /* Fruit.swift */,
+				819DFA1427D53207001B7821 /* DragAndDropService.swift */,
 				81F3BB1227D3ED22004204BB /* Assets.xcassets */,
 				81F3BB1427D3ED22004204BB /* Preview Content */,
 			);
@@ -148,6 +151,7 @@
 			files = (
 				81F3BB2527D3F0B3004204BB /* FruitCellView.swift in Sources */,
 				81F3BB1F27D3EF2B004204BB /* Fruit.swift in Sources */,
+				819DFA1527D53207001B7821 /* DragAndDropService.swift in Sources */,
 				81F3BB2127D3F013004204BB /* FruitsListViewModel.swift in Sources */,
 				81F3BB1D27D3EECD004204BB /* FruitsListScreen.swift in Sources */,
 				81F3BB0F27D3ED21004204BB /* ListDragAndDropApp.swift in Sources */,
@@ -208,7 +212,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -263,7 +267,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
